@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Contrast Tester</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="inputs">
-            <div class="colors colors-c1">
-                <label class="color-label cl1" for="color-1">Color 1</label>
-                <input type="text" placeholder="#ffffff" name="Color 1" class="color-input" value="#0078c1" id="input-color-1">
-            </div>
-            <div class="colors colors-c2">
-                <label class="color-label cl2" for="color-2">Color 2</label>
-                <input type="text" placeholder="#000000" name="Color 2" class="color-input" value="#ffffff" id="input-color-2">
-            </div>
+      <div class="inputs">
+        <div class="colors colors-c1">
+          <label class="color-label cl1" for="color-1">Color 1</label>
+          <input
+            type="text"
+            placeholder="#ffffff"
+            name="Color 1"
+            class="color-input"
+            value=""
+            id="input-color-1"
+          />
         </div>
-        
-        <button type="submit" class="btn">Check Contrast</button>
+        <div class="colors colors-c2">
+          <label class="color-label cl2" for="color-2">Color 2</label>
+          <input
+            type="text"
+            placeholder="#000000"
+            name="Color 2"
+            class="color-input"
+            value=""
+            id="input-color-2"
+          />
+        </div>
+      </div>
 
-        <div class="message">Please enter hex numbers!</div>
+      <button type="submit" class="btn">Check Contrast</button>
 
+      <div class="message">Please enter hex numbers!</div>
     </div>
-</body>
+  </body>
 </html>

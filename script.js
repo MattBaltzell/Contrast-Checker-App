@@ -58,7 +58,7 @@ const changeColorLabels = (a, b) => {
 const showContrastMessage = () => {
   message.style.display = "block";
   if (ratio >= 7) {
-    message.textContent = "The colors passed with high contrast!!";
+    message.textContent = "The colors passed for body copy!!";
     message.style.color = "#333333";
   } else if (ratio < 7 && ratio >= 4.5) {
     message.textContent =

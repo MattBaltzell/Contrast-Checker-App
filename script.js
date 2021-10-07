@@ -8,9 +8,7 @@ const colorLabel1 = document.querySelector(".cl1");
 const colorLabel2 = document.querySelector(".cl2");
 const btn = document.querySelector(".btn");
 const message = document.querySelector(".message");
-let rgb1 = [];
-let rgb2 = [];
-let ratio = 0;
+let [rgb1, rgb2, ratio] = [[], [], 0];
 
 const submit = btn.addEventListener("click", () => {
   rgb1 = [
@@ -42,7 +40,6 @@ const contrast = () => {
   var brightest = Math.max(lum1, lum2);
   var darkest = Math.min(lum1, lum2);
   ratio = (brightest + 0.05) / (darkest + 0.05);
-  console.log(ratio);
   return (brightest + 0.05) / (darkest + 0.05);
 };
 
